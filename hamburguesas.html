@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas</title>
+    <link rel="stylesheet" href="estilos/styleshamburguesas.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/imagenes/icono.jpg" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Titan+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+
+            <!-- menu desplegable -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <!-- logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.jpg" alt="logo-page" width="50" height="50"
+                        class="d-inline-block align-text-top rounded-circle">
+                </a>
+
+                <!-- paginas -->
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item name">
+                        <a class="nav-link" href="index.html">Pio's Pizza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="container-fluid">
+        <div class="flex-row d-flex justify-content-between align-items-center head-items">
+            <div class="menu-item"><a href="hamburguesas.html">Hamburguesas</a></div>
+            <div class="menu-item"><a href="pizzas.html">Pizzas</a></div>
+            <div class="menu-item"><a href="snacks.html">Snacks</a></div>
+            <div class="menu-item"><a href="bebidas.html">Bebidas</a></div>
+        </div>
+    </header>
+
+    <!-- CODIGO PARA COPIAR INICIA AQUÍ // HAY CÓDIGO QUE TIENES QUE COPIAR DEL CSS HAMBURGUESAS -->
+    <!-- CARRITO -->
+    <div class="container-icon">
+        <div class="container-cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon-cart">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+            <div class="count-products">
+                <span id="contador-productos">0</span>
+            </div>
+        </div>
+        <!-- lista pedido -->
+        <div id="Pedidos">
+            <div></div>
+            <span data-Price="$0">Total: </span>
+        </div>
+    </div>
+    </header>
+
+    <div class="container titulo">
+        <h2>Hamburguesas</h2> <!-- AQUÍ LE CAMBIAN EL NOMBRE A LA SECCIÓN QUE LES CORRESPONDE -->
+    </div>
+    <!-- CODIGO PARA COPIAR TERMINA AQUÍ -->
+
+    <section id="Hamburguesas" class="container-fluid">
+
+        <div class="row justify-content-center">
+            <!-- burger 1 -->
+            <div class="Hamburguesa col-12 col-md-4">
+                <div class="product-container">
+                    <img src="imagenes/burguer sencilla.jpg" alt="Hamburguesa Sencilla">
+                    <h3>Sencilla</h3>
+                    <p>Deliciosa hamburguesa con carne jugosa, lechuga, tomate, cebolla y aderezos.</p>
+                    <span data-Price="40">Costo: $</span>
+                    <button class="btn-agregar" data-name="Sencilla" data-price="40">Agregar al carrito</button>                </div>
+            </div>
+            <!-- burger 2 -->
+            <div class="Hamburguesa col-12 col-md-4">
+                <div class="product-container">
+                    <img src="imagenes/burguer con tocino.jpg" alt="Hamburguesa con Tocino">
+                    <h3>Con Tocino</h3>
+                    <p>Hamburguesa con una jugosa carne, tocino crujiente, queso y aderezos.</p>
+                    <span data-Price="45">Costo: $</span>
+                    <button class="btn-agregar" data-name="Tocino" data-price="45">Agregar al carrito</button>                </div>
+                </div>
+            </div>
+            <!-- burger 3 -->
+            <div class="Hamburguesa col-12 col-md-4">
+                <div class="product-container">
+                    <img src="imagenes/burguer hawallana.jpg" alt="Hamburguesa Hawallana">
+                    <h3>Hawallana</h3>
+                    <p>Una hamburguesa con piña, jamón, queso y aderezos exquisitos.</p>
+                    <span data-Price="45">Costo: $</span>
+                    <button id="hawallana">Agregar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+
+            <!-- burger 4 -->
+            <div class="Hamburguesa col-12 col-md-4">
+                <div class="product-container">
+                    <img src="imagenes/burguer de pollo.jpg"
+                    alt="Hamburguesa de Pollo">
+                    <h3>Pollo</h3>
+                    <p>Hamburguesa de pollo crujiente a la parrilla, lechuga, tomate, cebolla, salsa.</p>
+                    <span data-Price="45">Costo: $</span>
+                    <button id="pollo">Agregar</button>
+                </div>
+            </div>
+            <!-- burger 5 -->
+            <div class="Hamburguesa col-12 col-md-4">
+                <div class="product-container">
+                    <img src="imagenes/combo1-burguer.png"
+                    alt="Hamburguesa de Pollo">
+                    <h3>Combo 1</h3>
+                    <p>Combo de Hamburguesa Sencilla, Papas a la Francesa y Refresco de 400Ml.</p>
+                    <span data-Price="70">Costo: $</span>
+                    <button id="combo_1">Agregar</button>
+                </div>
+            </div>
+            <!-- burger 6 -->
+            <div class="Hamburguesa col-12 col-md-4">
+                <div class="product-container">
+                    <img src="imagenes/combo 2 icono-PhotoRoom.png-PhotoRoom.png"
+                    alt="Hamburguesa de Pollo">
+                    <h3>Combo 2</h3>
+                    <p>Combo Hamburguesa de pollo a la parrilla, Papas a la Francesa y Refresco de 400Ml.</p>
+                    <span data-Price="80">Costo: $</span>
+                    <button id="combo_2">Agregar</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer: datos de contacto y locación -->
+    <footer class="footer mt-auto py-3 bg-light text-center">
+        <div class="container">
+            <span class="text-muted">&copy; Todos los derechos reservados :: Pio's Pizza :: México 2023</span>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/5fc6fc59a6.js" crossorigin="anonymous"></script>
+    <script src="/JavaScript/ticket.js"></script>
+    <!-- <script src="/JavaScript/burguer.js"></script> -->
+</body>
+
+</html>

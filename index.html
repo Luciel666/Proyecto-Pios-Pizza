@@ -4,39 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <!-- Titulo -->
+    <title>Pio's Pizza</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/imagenes/icono.jpg" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Titan+One&display=swap" rel="stylesheet">    
 </head>
 <body>
-    <header>
-        <nav>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
 
-        </nav>
+            <!-- menu desplegable -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <!-- logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.jpg" alt="logo-page" width="50" height="50" class="d-inline-block align-text-top rounded-circle">
+                </a>
+
+                <!-- paginas -->
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item name">
+                        <a class="nav-link" href="index.html">Pio's Pizza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="container d-flex justify-content-center aling-items-center">
+        <div class="menu">
+            <p>Menú</p>
+        </div>
     </header>
 
-    <!-- Hamburgesas -->
-    <section>
-
+    <!-- menu -->
+    <section class="menu container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-sm-12 col-md-4 col piha column">
+                <a href="pizzas.html"><p>Pizzas y Hamburguesas</p></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col snack column">
+                <a href="snacks.html"><p>Snacks</p></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col drink column">
+                <a href="bebidas.html"><p>Bebidas</p></a>
+            </div>
+        </div>
     </section>
-
-    <!-- Pizzas -->
-    <section>
-
-    </section>
-
-    <!-- Snacks -->
-    <section>
-
-    </section>
-
-    <!-- Drinks -->
-    <section>
-
-    </section>
-
-    <!-- Contact -->
-    <footer>
-
+    
+    <!-- footer: datos de contacto y locación -->
+    <footer class="container-fluid bg-light text-center p-1">
+        <p class="small">&copy; Todos los derechos reservados :: Pio's Pizza :: México 2023</p>
     </footer>
+
+    
 </body>
 </html>
 
